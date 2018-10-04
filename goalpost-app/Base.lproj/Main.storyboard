@@ -319,6 +319,121 @@
             </objects>
             <point key="canvasLocation" x="896.79999999999995" y="133.5832083958021"/>
         </scene>
+        <!--Finish GoalVC-->
+        <scene sceneID="az0-Ys-Ur7">
+            <objects>
+                <viewController storyboardIdentifier="finishGoalVC" id="DpZ-px-kSa" customClass="FinishGoalVC" customModule="goalpost_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i2Z-xa-4XD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nhF-zn-HIm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JAp-LI-CXy">
+                                        <rect key="frame" x="141" y="32.5" width="92.5" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWr-rJ-47q">
+                                                <rect key="frame" x="0.0" y="0.0" width="46.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8io-Ya-Nw1">
+                                                <rect key="frame" x="46.5" y="0.0" width="46" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkV-1K-ZmB">
+                                        <rect key="frame" x="15" y="29.5" width="14" height="25"/>
+                                        <state key="normal" image="back"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.42745098040000001" green="0.73725490199999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="wkV-1K-ZmB" firstAttribute="leading" secondItem="nhF-zn-HIm" secondAttribute="leading" constant="15" id="2xH-22-kjH"/>
+                                    <constraint firstAttribute="bottom" secondItem="JAp-LI-CXy" secondAttribute="bottom" constant="12" id="7i7-IV-vyD"/>
+                                    <constraint firstItem="wkV-1K-ZmB" firstAttribute="centerY" secondItem="JAp-LI-CXy" secondAttribute="centerY" id="7k7-zj-Kd3"/>
+                                    <constraint firstAttribute="height" constant="65" id="Tjl-xW-JcN"/>
+                                    <constraint firstItem="JAp-LI-CXy" firstAttribute="centerX" secondItem="nhF-zn-HIm" secondAttribute="centerX" id="uMY-QJ-9d9"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RS4-5i-ous">
+                                <rect key="frame" x="20" y="85" width="335" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many point until complete?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upz-OY-cgb">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="SSu-wY-xQs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5J6-Ab-Ej9">
+                                        <rect key="frame" x="0.0" y="35" width="335" height="65"/>
+                                        <color key="textColor" red="0.42745098040000001" green="0.73725490199999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="54"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="AaE-LB-l3q"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="krh-Dz-enh">
+                                <rect key="frame" x="0.0" y="193" width="375" height="474"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UrF-8m-O9M">
+                                        <rect key="frame" x="0.0" y="424" width="375" height="50"/>
+                                        <color key="backgroundColor" red="0.91764705879999997" green="0.66274509800000003" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="stZ-Sv-pUo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <state key="normal" title="CREATE GOAL">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="createGoalBtnWasPressed:" destination="DpZ-px-kSa" eventType="touchUpInside" id="jYd-3y-iB8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="UrF-8m-O9M" secondAttribute="trailing" id="1ZT-9e-Ek5"/>
+                                    <constraint firstItem="UrF-8m-O9M" firstAttribute="leading" secondItem="krh-Dz-enh" secondAttribute="leading" id="Khd-OL-zaT"/>
+                                    <constraint firstAttribute="bottom" secondItem="UrF-8m-O9M" secondAttribute="bottom" id="f4g-sQ-UzR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RS4-5i-ous" firstAttribute="top" secondItem="nhF-zn-HIm" secondAttribute="bottom" constant="20" id="36D-VA-80r"/>
+                            <constraint firstItem="krh-Dz-enh" firstAttribute="bottom" secondItem="T25-uI-FJy" secondAttribute="bottom" id="Izb-pQ-dXL"/>
+                            <constraint firstItem="krh-Dz-enh" firstAttribute="top" secondItem="RS4-5i-ous" secondAttribute="bottom" constant="8" id="M0F-lS-Be1"/>
+                            <constraint firstItem="nhF-zn-HIm" firstAttribute="leading" secondItem="T25-uI-FJy" secondAttribute="leading" id="MB1-4A-9VI"/>
+                            <constraint firstItem="RS4-5i-ous" firstAttribute="leading" secondItem="T25-uI-FJy" secondAttribute="leading" constant="20" id="ROe-IO-X58"/>
+                            <constraint firstItem="nhF-zn-HIm" firstAttribute="top" secondItem="i2Z-xa-4XD" secondAttribute="top" id="SZ8-p0-r7f"/>
+                            <constraint firstItem="nhF-zn-HIm" firstAttribute="trailing" secondItem="T25-uI-FJy" secondAttribute="trailing" id="WHo-fP-v7y"/>
+                            <constraint firstItem="T25-uI-FJy" firstAttribute="trailing" secondItem="RS4-5i-ous" secondAttribute="trailing" constant="20" id="aZj-zi-RIF"/>
+                            <constraint firstItem="krh-Dz-enh" firstAttribute="leading" secondItem="T25-uI-FJy" secondAttribute="leading" id="gdf-kn-GcD"/>
+                            <constraint firstItem="krh-Dz-enh" firstAttribute="trailing" secondItem="T25-uI-FJy" secondAttribute="trailing" id="zu4-RZ-Y5M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="T25-uI-FJy"/>
+                    </view>
+                    <connections>
+                        <outlet property="createGoalBtn" destination="UrF-8m-O9M" id="7zO-Ik-9CC"/>
+                        <outlet property="pointsTextField" destination="5J6-Ab-Ej9" id="a1v-7Y-R0q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WVB-p3-42s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1596" y="133.5832083958021"/>
+        </scene>
     </scenes>
     <resources>
         <image name="addGoal" width="35" height="32"/>
