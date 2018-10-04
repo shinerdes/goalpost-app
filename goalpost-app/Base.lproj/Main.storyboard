@@ -312,7 +312,7 @@
                         <outlet property="goalTextView" destination="2AP-ei-hSN" id="egY-kR-gDp"/>
                         <outlet property="longTermBtn" destination="UKp-OB-mFt" id="2OG-4E-lx6"/>
                         <outlet property="nextBtn" destination="iwX-zf-dTq" id="4pO-ZE-uEr"/>
-                        <outlet property="shorTermBtn" destination="fcf-60-AJA" id="Ngq-2I-prn"/>
+                        <outlet property="shortTermBtn" destination="fcf-60-AJA" id="EG2-8k-pSp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abL-09-iRF" userLabel="First Responder" sceneMemberID="firstResponder"/>
