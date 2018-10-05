@@ -6,7 +6,10 @@
 //  Copyright © 2018년 김영석. All rights reserved.
 //
 
+
 import UIKit
+import CoreData
+
 
 class FinishGoalVC: UIViewController, UITextFieldDelegate {
 
@@ -30,6 +33,57 @@ class FinishGoalVC: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func createGoalBtnWasPressed(_ sender: Any) {
+        if pointsTextField.text != "" {
+            self.save { (complete) in
+                if complete {
+                    dismiss(animated: true, completion: nil)
+                }
+            }
+        }
+    }
+    @IBAction func backButtonWasPressed(_ sender: Any) {
+        dismissDetail()
+    }
+    
+    func save(completion: (_ finished: Bool) -> ()) {
+        guard let manageContext = appDelegate?.persistentContainer.viewContext else { return }
+        let goal = Goal(context: manageContext)
+        
+        goal.goalDescription = goalDescription
+        goal.goalType = goalType.rawValue
+        goal.goalCompletionValue = Int32(pointsTextField.text!)!
+        goal.goalProgress = Int32(0)
+        
+        do {
+            try manageContext.save()
+            print("Successfully saved data")
+            completion(true)
+            
+        } catch {
+            debugPrint("Could not save: \(error.localizedDescription)")
+            completion(false)
+        }
+        
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
