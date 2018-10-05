@@ -57,8 +57,6 @@ class FinishGoalVC: UIViewController, UITextFieldDelegate {
         do {
             try manageContext.save()
             print("Successfully saved data")
-            print("\(goal.goalProgress)")
-            print("\(goal.goalCompletionValue)")
             
             
             completion(true)
